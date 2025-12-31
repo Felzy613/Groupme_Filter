@@ -62,50 +62,12 @@ Configuration is stored locally at:
 
 ## Finding Group IDs to Block
 
-### Method 1: Using the App (Easiest)
 1. Launch GroupMe Blocker
 2. Add your account and enter your token
 3. The app will automatically fetch all your groups
 4. Click "Load Groups" to see all your groups with their IDs
 5. Select the ones you want to block/allow
 6. IDs will be displayed in the format: `123456789 | Group Name`
-
-### Method 2: Using GroupMe API Directly
-If you want to find group IDs manually:
-
-1. **Get your API token**:
-   - Go to [GroupMe Developer Portal](https://dev.groupme.com/)
-   - Create an app and copy your API token
-
-2. **Fetch all your groups**:
-   ```bash
-   curl "https://api.groupme.com/v3/groups?token=YOUR_TOKEN_HERE"
-   ```
-
-3. **Find the group ID**:
-   - Look for the group name you want to block
-   - Copy the `id` field
-   - Example response:
-     ```json
-     {
-       "response": [
-         {
-           "id": "123456789",
-           "name": "My Group",
-           "members_count": 5
-         }
-       ]
-     }
-     ```
-
-### Method 3: Web Browser DevTools
-1. Open GroupMe in your browser and log in
-2. Open Developer Tools (F12 or Cmd+Option+I)
-3. Go to the Network tab
-4. Refresh the page
-5. Look for API calls to `api.groupme.com`
-6. Find requests containing groups data
-7. The ID will be visible in the response
 
 ## Development
 
