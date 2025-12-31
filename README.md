@@ -51,27 +51,6 @@ Configuration is stored locally at:
 3. **No Plaintext**: Tokens are NEVER stored in plaintext in the config file
 4. **Automatic Decryption**: The app automatically decrypts tokens when needed
 
-#### Safe for Public Repository
-
-✅ This repository is safe to make public because:
-- Config files are in `.gitignore` (encrypted configs won't be committed)
-- Encryption keys are in `.gitignore` (keys won't be committed)
-- Even if someone clones the repo, they can't access your tokens without the encryption key
-- The encryption library (`cryptography`) is industry-standard and battle-tested
-
-### What NOT to Commit
-
-The following files are protected by `.gitignore`:
-- `accounts_config.json` - Contains encrypted tokens
-- `encryption.key` - Required to decrypt tokens
-- `.env` files - Environment variables
-- Your venv directory
-
-If you accidentally commit sensitive files before running `.gitignore`, use:
-```bash
-git rm --cached accounts_config.json encryption.key
-```
-
 ## Usage
 
 1. Launch the application
@@ -98,7 +77,3 @@ python GroupMe_Blocker.py
 ## License
 
 MIT
-
-## Disclaimer
-
-This tool uses the GroupMe API. Make sure you have the right to use API tokens for your accounts. Use responsibly.
