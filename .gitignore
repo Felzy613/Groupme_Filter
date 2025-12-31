@@ -1,0 +1,43 @@
+# Virtual environment
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Configuration with sensitive data (IMPORTANT: Never commit tokens!)
+accounts_config.json
+encryption.key
+
+# Environment variables
+.env
+.env.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+
+# Build artifacts
+*.dmg
+*.exe
+*.msi
+
+# App support directory (stores configs locally)
+~/Library/Application Support/GroupMeBlocker/
+~/.config/GroupMeBlocker/
+%APPDATA%/GroupMeBlocker/
+
+

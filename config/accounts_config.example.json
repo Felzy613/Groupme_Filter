@@ -1,0 +1,12 @@
+{
+  "global_blocked_group_ids": [],
+  "accounts": [
+    {
+      "label": "My Account",
+      "token": "",
+      "blocked_group_ids": [],
+      "mode": "blacklist",
+      "token_env_var": "GROUPME_TOKEN"
+    }
+  ]
+}
